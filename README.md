@@ -1,4 +1,4 @@
-# ComputacaoGrafica_AnimacaoGraficos
+# Projeto de Computaçao Gráfica
 Projeto da disciplina de Computação Gráfica 2016.1 (Ciência da Computação - UEPB).
 
 * Animação do Sol.
