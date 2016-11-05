@@ -1,0 +1,45 @@
+package sistemasolar;
+
+import javax.swing.JFrame;
+import javax.swing.border.EmptyBorder;
+
+public class FrameSS extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public static PainelSS contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	/*public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FrameSS frame = new FrameSS();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}*/
+
+	/**
+	 * Create the frame.
+	 */
+	public FrameSS() {
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setBounds(450, 25, 614, 639);
+		//setBackground(Color.WHITE);
+		contentPane = new PainelSS();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		
+	}
+}
+
+
+

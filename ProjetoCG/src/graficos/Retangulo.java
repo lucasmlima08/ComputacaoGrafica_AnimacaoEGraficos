@@ -1,0 +1,39 @@
+package graficos;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+
+public class Retangulo {
+	private Graphics graphics;
+	
+	private Color[] cores = new Color[]{ 
+			Color.BLUE, 
+			Color.RED, 
+			Color.GREEN, 
+			Color.YELLOW, 
+			Color.ORANGE, 
+			Color.CYAN, 
+			Color.DARK_GRAY, 
+			Color.MAGENTA, 
+			Color.PINK };
+	
+	private int contador = 0;
+	
+	// Desenha o retângulo nos gráficos de Barras e Colunas.
+	public void desenharRetangulo(int xmin, int xmax, int ymin, int ymax, BufferedImage bi){
+		graphics = bi.createGraphics();
+		
+		// Pinta a coluna
+		int largura = Math.abs(xmax - xmin);
+		int altura = Math.abs(ymax - ymin);
+		graphics.setColor(cores[contador]);
+		graphics.fillRect(xmin+1, ymax+1, largura-1 , altura-1);	
+		
+		// Incrementa contador de cores.
+		contador++;
+		if (contador == 9){
+			contador = 0;
+		}
+	}
+}

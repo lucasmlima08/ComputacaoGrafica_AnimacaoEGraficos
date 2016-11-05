@@ -1,0 +1,28 @@
+package graficos;
+
+import java.awt.Color;
+
+public class Cores {
+	private int red;
+	private int green;
+	private int blue;
+	private Color cor;
+	
+	/**
+	 * Construtor, recebe o valor das intensidades
+	 * @param red
+	 * @param green
+	 * @param blue
+	 */
+	public Cores(Color cor){
+		this.cor = new Color(red, green, blue);
+	}
+
+	/**
+	 * Retorna intensidade vermelha
+	 * @return
+	 */
+	public int getCor() {
+		return cor;
+	}
+}
